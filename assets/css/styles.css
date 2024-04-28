@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "MyCustomFont2";
+  src: url("../fonts/Helvetica Neue W23 for SKY Lig.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --primary-color: #029A8B;
+  --h3-color: #4A635E;
+  --h2-color: #029A8B;
+  --h4-color: #9EF2E4;
+  --gradin-bg: linear-gradient(211.76deg, #07A869 19.12%, #0DA9A6 62.59%, #3D7EB9 80.88%);
+  --gradin-btn: linear-gradient(257.76deg, #07A869 0.11%, #0DA9A6 70.4%, #3D7EB9 100.11%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+  text-align: right;
+}
+
+body {
+  font-family: "MyCustomFont2";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, a:link {
+  text-decoration: none;
+}
+
+select, button {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.main {
+  height: 100vh;
+}
+@media (min-width: 870px) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+}
+.main .side-mg {
+  position: relative;
+  background: url("/assets/imgs/02.png") no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 40px;
+}
+@media (max-width: 720px) {
+  .main .side-mg {
+    background-size: cover;
+    /* height: 45vh; */
+    /* height: 413px; */
+    max-height: 340px;
+    width: 100%;
+    /* padding: 0; */
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 870px) {
+  .main .side-mg {
+    max-height: 670px;
+  }
+}
+.main .side-mg .txt {
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-42%, 0px);
+}
+@media (max-width: 720px) {
+  .main .side-mg .txt {
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-35%, 0px);
+  }
+}
+@media (min-width: 870px) {
+  .main .side-mg .txt {
+    position: absolute;
+    top: 0;
+  }
+}
+.main .side-mg .txt h4 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 34.86px;
+  color: var(--h4-color);
+  margin-bottom: 70px;
+}
+@media (max-width: 720px) {
+  .main .side-mg .txt h4 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+.main .side-mg .txt .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .side-mg .txt .logo img {
+  width: 270px;
+}
+@media (max-width: 720px) {
+  .main .side-mg .txt .logo img {
+    width: 150px;
+  }
+}
+.main .box {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 720px) {
+  .main .box {
+    padding: 20px 15px;
+  }
+}
+@media (min-width: 870px) {
+  .main .box {
+    height: auto;
+  }
+}
+.main .box .tit {
+  text-align: center;
+}
+.main .box .tit h3 {
+  color: var(--h3-color);
+  font-size: 32px;
+  font-weight: 300;
+}
+.main .box .tit h2 {
+  color: var(--h2-color);
+  font-size: 36px;
+  font-weight: 400;
+}
+.main .box form {
+  width: 100%;
+  padding: 30px 100px;
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .main .box form {
+    padding: 20px;
+  }
+}
+@media (min-width: 870px) {
+  .main .box form {
+    width: auto;
+  }
+}
+.main .box form input {
+  background: #ECECEC;
+  padding: 12px 15px;
+}
+.main .box form .rest-and-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.main .box form .rest-and-submit a {
+  color: #B0B0B0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.main .box form button {
+  background-color: var(--primary-color);
+  padding: 15px 130px;
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 720px) {
+  .main .box form button {
+    padding: 15px 40px;
+  }
+}
+
+.dash_one, .dash_tow {
+  height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+}
+.dash_one .side-bar, .dash_tow .side-bar {
+  width: 20%;
+  border: 1px solid #DDD;
+  background: var(--gradin-bg);
+}
+.dash_one .side-bar .logo, .dash_tow .side-bar .logo {
+  text-align: center;
+  padding: 18px 0 0px 0;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 30px;
+}
+.dash_one .side-bar .logo img, .dash_tow .side-bar .logo img {
+  max-width: 140px;
+}
+.dash_one .side-bar .logo .wel-name, .dash_tow .side-bar .logo .wel-name {
+  padding: 0 20px;
+}
+.dash_one .side-bar .logo .wel-name h5, .dash_tow .side-bar .logo .wel-name h5 {
+  color: #9EF2E4;
+  font-size: 18px;
+  font-weight: 400;
+}
+.dash_one .side-bar .menu, .dash_tow .side-bar .menu {
+  padding: 10px 30px;
+}
+.dash_one .side-bar .menu ul li, .dash_tow .side-bar .menu ul li {
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.dash_one .side-bar .menu ul li span, .dash_tow .side-bar .menu ul li span {
+  background-color: #64748B;
+  border-radius: 50%;
+  padding: 3px 10px;
+  color: #FFF;
+  margin-left: 10px;
+}
+.dash_one .side-bar .menu ul li a, .dash_tow .side-bar .menu ul li a {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.dash_one .side-bar .menu ul li.active, .dash_tow .side-bar .menu ul li.active {
+  background-color: #F8FAFC;
+}
+.dash_one .side-bar .menu ul li.active span, .dash_tow .side-bar .menu ul li.active span {
+  background-color: var(--primary-color);
+}
+.dash_one .side-bar .menu ul li.active a, .dash_tow .side-bar .menu ul li.active a {
+  color: var(--h2-color);
+}
+.dash_one .main-cont, .dash_tow .main-cont {
+  width: 80%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.dash_one .main-cont .header, .dash_tow .main-cont .header {
+  padding: 27px 0;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+  background-color: #FFF;
+}
+.dash_one .main-cont .header h2, .dash_tow .main-cont .header h2 {
+  color: #4A635E;
+  font-size: 32px;
+  font-weight: 300;
+}
+.dash_one .main-cont .sub-cont, .dash_tow .main-cont .sub-cont {
+  padding: 20px 50px;
+}
+.dash_one .main-cont .sub-cont form, .dash_tow .main-cont .sub-cont form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dash_one .main-cont .sub-cont form .form-select, .dash_tow .main-cont .sub-cont form .form-select {
+  padding: 7px 10px 7px 30px;
+  background-position: left 0.5rem center;
+  border: 0;
+  min-width: 228px;
+}
+.dash_one .main-cont .sub-cont form .btns button, .dash_tow .main-cont .sub-cont form .btns button {
+  border: 0;
+  padding: 6px 15px;
+  border-radius: 8px;
+  margin-left: 20px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+.dash_one .main-cont .sub-cont form .btns .add_btn, .dash_tow .main-cont .sub-cont form .btns .add_btn {
+  background: var(--gradin-btn);
+}
+.dash_one .main-cont .sub-cont form .btns .add_btn img, .dash_tow .main-cont .sub-cont form .btns .add_btn img {
+  margin-left: 5px;
+  width: 20px;
+}
+.dash_one .main-cont .sub-cont form .btns .del_btn, .dash_tow .main-cont .sub-cont form .btns .del_btn {
+  background-color: #FFDAD6;
+}
+.dash_one .main-cont .sub-cont .box, .dash_tow .main-cont .sub-cont .box {
+  background-color: #FFF;
+  width: 100%;
+  padding: 30px;
+  border-radius: 16px;
+  min-height: 60vh;
+}
+.dash_one .main-cont .sub-cont .box .text, .dash_tow .main-cont .sub-cont .box .text {
+  padding: 5px 50px;
+  text-align: center;
+}
+.dash_one .main-cont .sub-cont .box .text p, .dash_tow .main-cont .sub-cont .box .text p {
+  color: #008679;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.dash_one .main-cont .sub-cont .box .text p span, .dash_tow .main-cont .sub-cont .box .text p span {
+  color: #DE3730;
+}
+.dash_one .main-cont .sub-cont .box table, .dash_tow .main-cont .sub-cont .box table {
+  text-align: center;
+}
+.dash_one .main-cont .sub-cont .box table thead, .dash_tow .main-cont .sub-cont .box table thead {
+  background: var(--gradin-btn);
+}
+.dash_one .main-cont .sub-cont .box table thead tr th, .dash_tow .main-cont .sub-cont .box table thead tr th {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400;
+  max-width: 95px;
+}
+.dash_one .main-cont .sub-cont .box table thead tr th form #check, .dash_tow .main-cont .sub-cont .box table thead tr th form #check {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: 0;
+}
+.dash_one .main-cont .sub-cont .box table thead tr th#mq, .dash_tow .main-cont .sub-cont .box table thead tr th#mq {
+  min-width: 100px;
+}
+.dash_one .main-cont .sub-cont .box table thead tr th#mq .da-to, .dash_tow .main-cont .sub-cont .box table thead tr th#mq .da-to {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #DDD;
+  padding: 5px 0;
+}
+.dash_one .main-cont .sub-cont .box table thead tr th#mq2, .dash_tow .main-cont .sub-cont .box table thead tr th#mq2 {
+  min-width: 40px;
+}
+.dash_one .main-cont .sub-cont .box table thead tr th#mq3, .dash_tow .main-cont .sub-cont .box table thead tr th#mq3 {
+  min-width: 80px;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td, .dash_tow .main-cont .sub-cont .box table tbody tr td, .dash_one .main-cont .sub-cont .box table tbody tr th, .dash_tow .main-cont .sub-cont .box table tbody tr th {
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  max-height: 86px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td form #check, .dash_tow .main-cont .sub-cont .box table tbody tr td form #check, .dash_one .main-cont .sub-cont .box table tbody tr th form #check, .dash_tow .main-cont .sub-cont .box table tbody tr th form #check {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: 0;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td.bg_vvb, .dash_tow .main-cont .sub-cont .box table tbody tr td.bg_vvb, .dash_one .main-cont .sub-cont .box table tbody tr th.bg_vvb, .dash_tow .main-cont .sub-cont .box table tbody tr th.bg_vvb {
+  background-color: #F1F5F9;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td#spic, .dash_tow .main-cont .sub-cont .box table tbody tr td#spic, .dash_one .main-cont .sub-cont .box table tbody tr th#spic, .dash_tow .main-cont .sub-cont .box table tbody tr th#spic {
+  width: 110px;
+  direction: rtl;
+  text-align: right;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td#spic form, .dash_tow .main-cont .sub-cont .box table tbody tr td#spic form, .dash_one .main-cont .sub-cont .box table tbody tr th#spic form, .dash_tow .main-cont .sub-cont .box table tbody tr th#spic form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td#spic form .form-check-input:checked, .dash_tow .main-cont .sub-cont .box table tbody tr td#spic form .form-check-input:checked, .dash_one .main-cont .sub-cont .box table tbody tr th#spic form .form-check-input:checked, .dash_tow .main-cont .sub-cont .box table tbody tr th#spic form .form-check-input:checked {
+  background-color: #475569;
+  border-color: #475569;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td#spic form .form-check .form-check-input, .dash_tow .main-cont .sub-cont .box table tbody tr td#spic form .form-check .form-check-input, .dash_one .main-cont .sub-cont .box table tbody tr th#spic form .form-check .form-check-input, .dash_tow .main-cont .sub-cont .box table tbody tr th#spic form .form-check .form-check-input {
+  float: right;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.dash_one .main-cont .sub-cont .box table tbody tr td a, .dash_tow .main-cont .sub-cont .box table tbody tr td a, .dash_one .main-cont .sub-cont .box table tbody tr th a, .dash_tow .main-cont .sub-cont .box table tbody tr th a {
+  background: var(--gradin-btn);
+  border: 0;
+  padding: 6px 15px;
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dash_tow .sub-cont form {
+  justify-content: center !important;
+  border-bottom: 2px solid #f1f1f1 !important;
+  padding: 20px 0;
+  margin-bottom: 50px !important;
+}
+.dash_tow .sub-cont form .form-group {
+  margin-left: 30px;
+}
+.dash_tow .sub-cont form .form-group select {
+  min-width: 155px !important;
+  border: 1px solid #f1f1f1 !important;
+  border-radius: 8px;
+}
+.dash_tow .sub-cont .text_e h4 {
+  color: #07A869;
+  font-size: 18px;
+  font-weight: 700;
+}
+.dash_tow .sub-cont .text_e p {
+  color: #94A3B8;
+  font-size: 18px;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */

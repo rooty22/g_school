@@ -18,3 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+$(document).ready(function() {
+    $('.slide').hover(function() {
+        $('.seleco').slideToggle('slow');
+        // $('.seleco').css({
+        //     display: 'block'
+        // })
+    });
+
+    $('.seleco p').click(function() {
+        $('.seleco p').removeClass('active');
+        $(this).addClass('active'); 
+    });
+});
+
+

@@ -242,31 +242,80 @@ select, button {
 
             ul {
                 li {
-                    padding: 14px 18px;
-                    border-radius: 12px;
-                    margin-bottom: 15px;
+                    position: relative;
 
-                    span {
-                        background-color: #64748B;
-                        border-radius: 50%;
-                        padding: 3px 10px;
-                        color: #FFF;
-                        margin-left: 10px;
-                    }
-                    a {
-                        color: #FFF;
-                        @include font_style(16px, 400)
-                    }
+                    .inputy {
+                        padding: 14px 18px;
+                        border-radius: 12px;
+                        margin-bottom: 15px;
 
-                    &.active {
-                        background-color: #F8FAFC;
-                    
-                        span {
-                            background-color: var(--primary-color);
+                        &.active {
+                            background-color: #F8FAFC;
+                        
+                            span {
+                                background-color: #07A869;
+                                color: #FFF;
+                            }
+                        
+                            a {
+                                color: var(--h2-color);
+                            }
                         }
-                    
+                        &>span {
+                            background-color: #FFF;
+                            border-radius: 50%;
+                            padding: 3px 8px;
+                            color: #07A869;
+                            margin-left: 10px;
+                        }
                         a {
-                            color: var(--h2-color);
+                            color: #FFF;
+                            @include font_style(16px, 400);
+
+                            span {
+                                @include font_style(12px, 400);
+                                margin-right: 6px;
+                                color: #9EF2E4;
+                            }
+                        }
+                    }
+
+                    .seleco {
+                        padding: 5px 45px 10px 10px;
+                        display: none;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            width: 3px;
+                            height: 83px;
+                            background: #4DC0A6;
+                            position: absolute;
+                            right: 25px;
+                            bottom: 30px;
+                        }
+
+                        p {
+                            position: relative;
+                            color: #FFF;
+                            padding: 8px 20px;
+                            @include font_style(15px, 400);
+                            cursor: pointer;
+
+                            &.active {
+                                background-color: #4DC0A6;
+                                border-radius: 11px;
+                            }
+
+                            &::before {
+                                content: "";
+                                width: 11px;
+                                height: 2px;
+                                background: #4DC0A6;
+                                position: absolute;
+                                right: -17px;
+                                top: 20px;
+                            }
                         }
                     }
                 }

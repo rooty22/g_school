@@ -234,30 +234,75 @@ select, button {
   padding: 10px 30px;
 }
 .dash_one .side-bar .menu ul li, .dash_tow .side-bar .menu ul li {
+  position: relative;
+}
+.dash_one .side-bar .menu ul li .inputy, .dash_tow .side-bar .menu ul li .inputy {
   padding: 14px 18px;
   border-radius: 12px;
   margin-bottom: 15px;
 }
-.dash_one .side-bar .menu ul li span, .dash_tow .side-bar .menu ul li span {
-  background-color: #64748B;
-  border-radius: 50%;
-  padding: 3px 10px;
+.dash_one .side-bar .menu ul li .inputy.active, .dash_tow .side-bar .menu ul li .inputy.active {
+  background-color: #F8FAFC;
+}
+.dash_one .side-bar .menu ul li .inputy.active span, .dash_tow .side-bar .menu ul li .inputy.active span {
+  background-color: #07A869;
   color: #FFF;
+}
+.dash_one .side-bar .menu ul li .inputy.active a, .dash_tow .side-bar .menu ul li .inputy.active a {
+  color: var(--h2-color);
+}
+.dash_one .side-bar .menu ul li .inputy > span, .dash_tow .side-bar .menu ul li .inputy > span {
+  background-color: #FFF;
+  border-radius: 50%;
+  padding: 3px 8px;
+  color: #07A869;
   margin-left: 10px;
 }
-.dash_one .side-bar .menu ul li a, .dash_tow .side-bar .menu ul li a {
+.dash_one .side-bar .menu ul li .inputy a, .dash_tow .side-bar .menu ul li .inputy a {
   color: #FFF;
   font-size: 16px;
   font-weight: 400;
 }
-.dash_one .side-bar .menu ul li.active, .dash_tow .side-bar .menu ul li.active {
-  background-color: #F8FAFC;
+.dash_one .side-bar .menu ul li .inputy a span, .dash_tow .side-bar .menu ul li .inputy a span {
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 6px;
+  color: #9EF2E4;
 }
-.dash_one .side-bar .menu ul li.active span, .dash_tow .side-bar .menu ul li.active span {
-  background-color: var(--primary-color);
+.dash_one .side-bar .menu ul li .seleco, .dash_tow .side-bar .menu ul li .seleco {
+  padding: 5px 45px 10px 10px;
+  display: none;
+  position: relative;
 }
-.dash_one .side-bar .menu ul li.active a, .dash_tow .side-bar .menu ul li.active a {
-  color: var(--h2-color);
+.dash_one .side-bar .menu ul li .seleco::before, .dash_tow .side-bar .menu ul li .seleco::before {
+  content: "";
+  width: 3px;
+  height: 83px;
+  background: #4DC0A6;
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+}
+.dash_one .side-bar .menu ul li .seleco p, .dash_tow .side-bar .menu ul li .seleco p {
+  position: relative;
+  color: #FFF;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.dash_one .side-bar .menu ul li .seleco p.active, .dash_tow .side-bar .menu ul li .seleco p.active {
+  background-color: #4DC0A6;
+  border-radius: 11px;
+}
+.dash_one .side-bar .menu ul li .seleco p::before, .dash_tow .side-bar .menu ul li .seleco p::before {
+  content: "";
+  width: 11px;
+  height: 2px;
+  background: #4DC0A6;
+  position: absolute;
+  right: -17px;
+  top: 20px;
 }
 .dash_one .main-cont, .dash_tow .main-cont {
   width: 80%;

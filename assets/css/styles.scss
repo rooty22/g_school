@@ -67,7 +67,7 @@ select, button {
     height: 100vh;
     @media (min-width: 870px) {
         display: flex;
-        align-items: center;
+        // align-items: center;
     }
 
     .side-mg {
@@ -108,7 +108,8 @@ select, button {
             }
             @media (min-width: 870px) {
                 position: absolute;
-                top: 0;
+                top: 50%;
+                transform: translate(-50%, -33%);
             }
 
             h4 {
@@ -149,7 +150,7 @@ select, button {
             padding: 20px 15px;
         }
         @media (min-width: 870px) {
-            height: auto;
+            // height: unset;
         }
 
         .tit {

@@ -446,6 +446,9 @@ select, button {
   margin-right: 5px;
   margin-left: 10px;
 }
+.dash_one .main-cont .sub-cont .box table tbody tr td#spic form label, .dash_tow .main-cont .sub-cont .box table tbody tr td#spic form label, .dash_one .main-cont .sub-cont .box table tbody tr th#spic form label, .dash_tow .main-cont .sub-cont .box table tbody tr th#spic form label {
+  font-size: 15px;
+}
 .dash_one .main-cont .sub-cont .box table tbody tr td a, .dash_tow .main-cont .sub-cont .box table tbody tr td a, .dash_one .main-cont .sub-cont .box table tbody tr th a, .dash_tow .main-cont .sub-cont .box table tbody tr th a {
   background: var(--gradin-btn);
   border: 0;
